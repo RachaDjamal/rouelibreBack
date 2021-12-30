@@ -1,3 +1,3 @@
-# Strapi application
+# Rouelibre.io Back
 
-A quick description of your strapi application
+Using Strapi as CMS for rouelibre.io
