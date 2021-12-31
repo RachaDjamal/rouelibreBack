@@ -16,7 +16,7 @@
       "type": "string",
       "required": true
     },
-    "Favicon": {
+    "favicon": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -26,10 +26,10 @@
         "videos"
       ]
     },
-    "Default": {
+    "defaultSeo": {
       "type": "component",
-      "repeatable": true,
-      "component": "shared.default-seo"
+      "repeatable": false,
+      "component": "shared.shared-seo"
     }
   }
 }

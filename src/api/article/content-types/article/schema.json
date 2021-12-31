@@ -12,21 +12,21 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string",
       "required": true
     },
-    "Description": {
+    "description": {
       "type": "text",
       "required": true
     },
-    "Content": {
+    "content": {
       "type": "richtext",
       "required": true
     },
-    "Slug": {
+    "slug": {
       "type": "uid",
-      "targetField": "Title",
+      "targetField": "title",
       "required": true
     },
     "categories": {
@@ -41,13 +41,20 @@
       "target": "api::writer.writer",
       "inversedBy": "articles"
     },
-    "thumbnail": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.images"
-    },
-    "Keywords": {
+    "keywords": {
       "type": "text"
+    },
+    "preventIndexing": {
+      "type": "boolean",
+      "default": false
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     }
   }
 }

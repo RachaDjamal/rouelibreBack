@@ -4,32 +4,32 @@
   "info": {
     "singularName": "writer",
     "pluralName": "writers",
-    "displayName": "Writer"
+    "displayName": "Writer",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string",
       "required": true
     },
-    "Bio": {
+    "bio": {
       "type": "text",
       "required": true
     },
-    "Avatar": {
-      "allowedTypes": [
-        "images"
-      ],
+    "avatar": {
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
-    "Slug": {
+    "slug": {
       "type": "uid",
-      "targetField": "Name",
       "required": true
     },
     "articles": {
